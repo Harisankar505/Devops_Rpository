@@ -1,0 +1,7 @@
+FROM nginx:latest
+
+WORKDIR /qucikbite
+
+COPY . /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]docker run -d -p 8080:80 --name devops-container devops
